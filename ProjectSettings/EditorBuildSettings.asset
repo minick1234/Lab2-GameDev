@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Main Menu.unity
+    guid: 1866ca19f9fcd3e4098d11dda8fedfd2
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Character Viewer.unity
+    guid: aadd2fcd0725329449d1a6ff9504705b
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Weapon Viewer.unity
+    guid: faafe8b145be7e64b893fb4b3d131095
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Character Animation Viewer.unity
+    guid: 8b34510a669785b4593efeeb3b4f497e
   m_configObjects: {}
