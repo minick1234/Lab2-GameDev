@@ -6770,157 +6770,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809330279}
   m_CullTransparentMesh: 1
---- !u!1 &846429751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 846429752}
-  - component: {fileID: 846429754}
-  - component: {fileID: 846429753}
-  - component: {fileID: 846429755}
-  m_Layer: 5
-  m_Name: WeaponDescriptionText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &846429752
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846429751}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0368819, y: 0.06649999, z: 0.03080475}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1071387684}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5833334}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -44.992523, y: -29.166656}
-  m_SizeDelta: {x: -100, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &846429753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846429751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    i need to know if this stupid fucking shit even works.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 185
-  m_fontSizeBase: 185
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 150
-  m_fontSizeMax: 600
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 15
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 4
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -71.11764, y: 89.34375, z: -2365.1042, w: -10691.584}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &846429754
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846429751}
-  m_CullTransparentMesh: 1
---- !u!114 &846429755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846429751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 2
 --- !u!1 &848126745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7050,7 +6899,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 1028.15, y: -11.78, z: 31.47, w: -141.04}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7217,7 +7066,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1071387684}
   - component: {fileID: 1071387686}
-  - component: {fileID: 1071387685}
   m_Layer: 5
   m_Name: TextContainer
   m_TagString: Untagged
@@ -7232,35 +7080,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071387683}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.820983, z: 1}
+  m_LocalScale: {x: 2.511099, y: 2.0615706, z: 2.5111}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1415396357}
-  - {fileID: 846429752}
+  - {fileID: 2036842443}
   m_Father: {fileID: 1955668883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.5}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.03889, y: 0.3656}
+  m_SizeDelta: {x: 39.856, y: 24.5799}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1071387685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071387683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 0, w: 0}
-  m_Softness: {x: 0, y: 0}
 --- !u!114 &1071387686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7273,14 +7107,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 846429752}
+  m_Content: {fileID: 2036842443}
   m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.25
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 250
+  m_ScrollSensitivity: 1
   m_Viewport: {fileID: 1071387684}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1415396358}
@@ -8318,7 +8152,7 @@ RectTransform:
   m_GameObject: {fileID: 1415396356}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000029504295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0934271, y: 0.5147948, z: 0.12081664}
+  m_LocalScale: {x: 0.038075037, y: 0.20979814, z: 0.0492373}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 565788167}
@@ -8327,7 +8161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.15674, y: -5.4}
+  m_AnchoredPosition: {x: 18.93, y: -1.1}
   m_SizeDelta: {x: 20, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415396358
@@ -8373,8 +8207,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 934564382}
   m_HandleRect: {fileID: 934564381}
   m_Direction: 3
-  m_Value: 0.49999994
-  m_Size: 0.0930094
+  m_Value: 1
+  m_Size: 0.08468144
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13440,78 +13274,17 @@ Transform:
   m_Father: {fileID: 503771774}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -0.319, y: -107.384, z: -56.352}
---- !u!1 &1623998667
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1623998670}
-  - component: {fileID: 1623998669}
-  m_Layer: 0
-  m_Name: ValidWeaponList
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1623998669
+--- !u!114 &1623998669 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+  m_PrefabInstance: {fileID: 6204853141381195232}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623998667}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a99e86bd9cbf0024a9a52862c7ee4c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentlySelectedWeapon:
-    CurrWeaponIndex: 0
-    CurrentWeaponName: 
-    CurrentWeaponDescription: 
-    CurrentWeaponMesh: {fileID: 0}
-  WeaponCollectionList:
-  - CurrWeaponIndex: 0
-    CurrentWeaponName: I am so sad right now i want this to work.
-    CurrentWeaponDescription: This is soething i am really sad about because this
-      shit is taking me forever.
-    CurrentWeaponMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  - CurrWeaponIndex: 0
-    CurrentWeaponName: Blades Of Zora
-    CurrentWeaponDescription: These are mystical and dangerous weapons be careful.
-    CurrentWeaponMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  - CurrWeaponIndex: 0
-    CurrentWeaponName: Sorcerers staff of light
-    CurrentWeaponDescription: This staff has the power TO LIGHT AN ENTIRE ROOM.
-    CurrentWeaponMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  - CurrWeaponIndex: 0
-    CurrentWeaponName: Thing
-    CurrentWeaponDescription: This is something we arent really to sure but we keep
-      it around because we like it.
-    CurrentWeaponMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  - CurrWeaponIndex: 0
-    CurrentWeaponName: Fart spray
-    CurrentWeaponDescription: This shit just fucking stinks.
-    CurrentWeaponMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1623998670
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623998667}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135.43341, y: -23.24414, z: 11.01072}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637274015
 GameObject:
   m_ObjectHideFlags: 0
@@ -19330,6 +19103,7 @@ GameObject:
   - component: {fileID: 1955668886}
   - component: {fileID: 1955668885}
   - component: {fileID: 1955668884}
+  - component: {fileID: 1955668887}
   m_Layer: 5
   m_Name: MainBackground
   m_TagString: Untagged
@@ -19346,7 +19120,7 @@ RectTransform:
   m_GameObject: {fileID: 1955668882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25.91542, y: 14.37308, z: 31.028}
+  m_LocalScale: {x: 25.915417, y: 14.373081, z: 31.028}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1071387684}
@@ -19355,8 +19129,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1279.9998, y: -914}
-  m_SizeDelta: {x: 100, y: 81.4}
+  m_AnchoredPosition: {x: 1285.4243, y: -888.1387}
+  m_SizeDelta: {x: 100.16, y: 82.615}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1955668884
 MonoBehaviour:
@@ -19416,6 +19190,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955668882}
   m_CullTransparentMesh: 1
+--- !u!114 &1955668887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955668882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &1963738000
 GameObject:
   m_ObjectHideFlags: 0
@@ -19529,6 +19317,156 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2036842442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036842443}
+  - component: {fileID: 2036842445}
+  - component: {fileID: 2036842444}
+  - component: {fileID: 2036842446}
+  m_Layer: 5
+  m_Name: WeaponDescriptionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2036842443
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036842442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.13069186, y: 0.62392664, z: 0.5122333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1071387684}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.098856986, y: -132.84163}
+  m_SizeDelta: {x: 275.2, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2036842444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036842442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: dadadadadaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPreviousWeaponObjectPrevious
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 15
+  m_fontSizeBase: 15
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -11.351418, y: -7.822876, z: -3.4756851, w: -494.06357}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2036842445
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036842442}
+  m_CullTransparentMesh: 1
+--- !u!114 &2036842446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036842442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &2062730260
 GameObject:
   m_ObjectHideFlags: 0
@@ -39357,12 +39295,162 @@ MonoBehaviour:
   MiddlePoint: {fileID: 1836034125}
   RightPoint: {fileID: 565819751}
   LeftPoint: {fileID: 388808840}
-  WeaponDescriptionText: {fileID: 846429753}
+  WeaponDescriptionText: {fileID: 2036842444}
   WeaponNameText: {fileID: 142212447}
   VWL: {fileID: 1623998669}
-  TransitionTime: 1
+  TransitionTime: 0.5
   CurrSlerpTime: 0
   fracOfJourneyComplete: 0
   IAmSlerping: 0
   IAmSlerpingNew: 0
-  TransitionMovementMultiplier: 7
+  TransitionMovementMultiplier: 14
+--- !u!1001 &6204853141381195232
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6204853141921490219, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_Name
+      value: ValidWeaponList
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[0].CurrentWeaponName
+      value: Bow And Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[1].CurrentWeaponMesh
+      value: 
+      objectReference: {fileID: 8720908179139277771, guid: 13f791f58e9c1d949beb41fcea897fba, type: 3}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[1].CurrentWeaponName
+      value: 4 Blade Axe
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[2].CurrentWeaponMesh
+      value: 
+      objectReference: {fileID: 2266434106026569460, guid: 6fe651044b932504481d6a524b44578c, type: 3}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[2].CurrentWeaponName
+      value: 6 Blade Axe
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[3].CurrentWeaponMesh
+      value: 
+      objectReference: {fileID: 4862312050076639386, guid: 59906e0883c51124382c3c21af43c5fa, type: 3}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[3].CurrentWeaponName
+      value: Pound Hammer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[4].CurrentWeaponMesh
+      value: 
+      objectReference: {fileID: 5745753154371342653, guid: e3e087a2bd9e0c84cbc667b4191bf8c4, type: 3}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[4].CurrentWeaponName
+      value: Knife
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[5].CurrentWeaponMesh
+      value: 
+      objectReference: {fileID: 5450243998822359594, guid: ae5215ff3a441ac4ab61d320493cf2c8, type: 3}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[5].CurrentWeaponName
+      value: Shield And Spear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[6].CurrentWeaponMesh
+      value: 
+      objectReference: {fileID: 5350271536044390468, guid: 400dcbca52d6a2b4aab1b4b56170b8a0, type: 3}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[6].CurrentWeaponName
+      value: Shield And Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[0].CurrentWeaponDescription
+      value: A very classic weapon as old as time, very effective for hunting, not
+        only beasts but man as well.  If you can only see from one eye i recommend
+        staying clear as it requires pretty good visual depth and accuracy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[1].CurrentWeaponDescription
+      value: This is a standard big axe, it isnt as cool though as it only has 4
+        blades....pft.....lameeeee
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[2].CurrentWeaponDescription
+      value: SEE NOW THIS IS A AXE. WOW, 6 WHOLE BLADES FOR NON STOP CHOPPIN. A legendary
+        weapon most profoundly used by really cool people....obviously.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[3].CurrentWeaponDescription
+      value: This is something we arent really to sure but we keep it around because
+        we like it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[4].CurrentWeaponDescription
+      value: This is what every thief and killer uses in the knife, be careful, as
+        someone might always be lurking in the dark with one of these bad boys equipt.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[5].CurrentWeaponDescription
+      value: These the things the spartans used, trust me this shit is deadly,one
+        little poke and its not joke, lemme tell ya.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: WeaponCollectionList.Array.data[6].CurrentWeaponDescription
+      value: Man, if you dont know bout these bad boys, then you clearly aint watched
+        any bad ass old medieval movies and tbh i am sad and cant be bothered explaining
+        this to you as this is quite self explainatory young traveler.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 135.43341
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -23.24414
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.01072
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}

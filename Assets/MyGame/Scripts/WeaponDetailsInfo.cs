@@ -13,6 +13,6 @@ public class WeaponDetailsInfo
     [SerializeField]
     public string CurrentWeaponDescription;
     [SerializeField]
-    public Mesh CurrentWeaponMesh;
+    public GameObject CurrentWeaponMesh;
     
 }

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6204853141921490219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6204853141921490222}
+  - component: {fileID: 6204853141921490221}
+  m_Layer: 0
+  m_Name: ValidWeaponList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6204853141921490222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6204853141921490219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 135.43341, y: -23.24414, z: 11.01072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6204853141921490221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6204853141921490219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99e86bd9cbf0024a9a52862c7ee4c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentlySelectedWeapon:
+    CurrWeaponIndex: 0
+    CurrentWeaponName: 
+    CurrentWeaponDescription: 
+    CurrentWeaponMesh: {fileID: 0}
+  WeaponCollectionList:
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: I am so sad right now i want this to work.
+    CurrentWeaponDescription: This is soething i am really sad about because this
+      shit is taking me forever.
+    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: Blades Of Zora
+    CurrentWeaponDescription: These are mystical and dangerous weapons be careful.
+    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: Sorcerers staff of light
+    CurrentWeaponDescription: This staff has the power TO LIGHT AN ENTIRE ROOM.
+    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: Thing
+    CurrentWeaponDescription: This is something we arent really to sure but we keep
+      it around because we like it.
+    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: Fart spray
+    CurrentWeaponDescription: This shit just fucking stinks.
+    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}

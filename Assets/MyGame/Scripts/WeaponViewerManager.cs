@@ -49,9 +49,6 @@ public class WeaponViewerManager : MonoBehaviour
 
             if (CurrentWeaponDetailsInfo.CurrWeaponIndex + 1 > VWL.WeaponCollectionList.Count - 1)
             {
-                WeaponObjectNext.transform.Find("SkinnedMesh").GetComponent<SkinnedMeshRenderer>().sharedMesh =
-                    VWL.WeaponCollectionList[0].CurrentWeaponMesh;
-
                 CurrentWeaponDetailsInfo.CurrentWeaponName =
                     VWL.WeaponCollectionList[0].CurrentWeaponName;
                 CurrentWeaponDetailsInfo.CurrentWeaponMesh =
@@ -60,12 +57,14 @@ public class WeaponViewerManager : MonoBehaviour
                     .WeaponCollectionList[0].CurrentWeaponDescription;
                 CurrentWeaponDetailsInfo.CurrWeaponIndex =
                     VWL.WeaponCollectionList[0].CurrWeaponIndex;
+
+                GameObject temp = Instantiate(CurrentWeaponDetailsInfo.CurrentWeaponMesh,
+                    WeaponObjectNext.transform.position,
+                    Quaternion.identity);
+                temp.transform.SetParent(WeaponObjectNext.transform);
             }
             else if (CurrentWeaponDetailsInfo.CurrWeaponIndex + 1 <= VWL.WeaponCollectionList.Count - 1)
             {
-                WeaponObjectNext.transform.Find("SkinnedMesh").GetComponent<SkinnedMeshRenderer>().sharedMesh =
-                    VWL.WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex + 1].CurrentWeaponMesh;
-
                 CurrentWeaponDetailsInfo.CurrentWeaponName =
                     VWL.WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex + 1].CurrentWeaponName;
                 CurrentWeaponDetailsInfo.CurrentWeaponMesh =
@@ -74,6 +73,11 @@ public class WeaponViewerManager : MonoBehaviour
                     .WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex + 1].CurrentWeaponDescription;
                 CurrentWeaponDetailsInfo.CurrWeaponIndex =
                     VWL.WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex + 1].CurrWeaponIndex;
+
+                GameObject temp = Instantiate(CurrentWeaponDetailsInfo.CurrentWeaponMesh,
+                    WeaponObjectNext.transform.position,
+                    Quaternion.identity);
+                temp.transform.SetParent(WeaponObjectNext.transform);
             }
 
             IAmSlerping = true;
@@ -91,11 +95,9 @@ public class WeaponViewerManager : MonoBehaviour
             WeaponObjectPrevious =
                 Instantiate(SpawnableWeaponItemUI, LeftPoint.transform.position, Quaternion.identity);
 
+
             if (CurrentWeaponDetailsInfo.CurrWeaponIndex - 1 < 0)
             {
-                WeaponObjectPrevious.transform.Find("SkinnedMesh").GetComponent<SkinnedMeshRenderer>().sharedMesh =
-                    VWL.WeaponCollectionList[VWL.WeaponCollectionList.Count - 1].CurrentWeaponMesh;
-
                 CurrentWeaponDetailsInfo.CurrentWeaponName =
                     VWL.WeaponCollectionList[VWL.WeaponCollectionList.Count - 1].CurrentWeaponName;
                 CurrentWeaponDetailsInfo.CurrentWeaponMesh =
@@ -104,12 +106,14 @@ public class WeaponViewerManager : MonoBehaviour
                     .WeaponCollectionList[VWL.WeaponCollectionList.Count - 1].CurrentWeaponDescription;
                 CurrentWeaponDetailsInfo.CurrWeaponIndex =
                     VWL.WeaponCollectionList[VWL.WeaponCollectionList.Count - 1].CurrWeaponIndex;
+
+                GameObject temp = Instantiate(CurrentWeaponDetailsInfo.CurrentWeaponMesh,
+                    WeaponObjectPrevious.transform.position,
+                    Quaternion.identity);
+                temp.transform.SetParent(WeaponObjectPrevious.transform);
             }
             else if (CurrentWeaponDetailsInfo.CurrWeaponIndex - 1 >= 0)
             {
-                WeaponObjectPrevious.transform.Find("SkinnedMesh").GetComponent<SkinnedMeshRenderer>().sharedMesh =
-                    VWL.WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex - 1].CurrentWeaponMesh;
-
                 CurrentWeaponDetailsInfo.CurrentWeaponName =
                     VWL.WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex - 1].CurrentWeaponName;
                 CurrentWeaponDetailsInfo.CurrentWeaponMesh =
@@ -118,6 +122,11 @@ public class WeaponViewerManager : MonoBehaviour
                     .WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex - 1].CurrentWeaponDescription;
                 CurrentWeaponDetailsInfo.CurrWeaponIndex =
                     VWL.WeaponCollectionList[CurrentWeaponDetailsInfo.CurrWeaponIndex - 1].CurrWeaponIndex;
+
+                GameObject temp = Instantiate(CurrentWeaponDetailsInfo.CurrentWeaponMesh,
+                    WeaponObjectPrevious.transform.position,
+                    Quaternion.identity);
+                temp.transform.SetParent(WeaponObjectPrevious.transform);
             }
 
             IAmSlerping = true;
@@ -134,6 +143,9 @@ public class WeaponViewerManager : MonoBehaviour
         CurrentWeaponDetailsInfo.CurrentWeaponMesh = VWL.CurrentlySelectedWeapon.CurrentWeaponMesh;
         CurrentWeaponDetailsInfo.CurrentWeaponDescription = VWL.CurrentlySelectedWeapon.CurrentWeaponDescription;
         CurrentWeaponDetailsInfo.CurrWeaponIndex = VWL.CurrentlySelectedWeapon.CurrWeaponIndex;
+        GameObject temp = Instantiate(CurrentWeaponDetailsInfo.CurrentWeaponMesh, MiddlePoint.transform.position,
+            Quaternion.identity);
+        temp.transform.SetParent(WeaponObjectCentre.transform);
     }
 
     // Update is called once per frame
@@ -195,9 +207,5 @@ public class WeaponViewerManager : MonoBehaviour
         //update the value of the name and descriptions
         WeaponDescriptionText.text = VWL.CurrentlySelectedWeapon.CurrentWeaponDescription;
         WeaponNameText.text = VWL.CurrentlySelectedWeapon.CurrentWeaponName;
-
-        //Update the weaponMesh whenever the value changes.
-        WeaponObjectCentre.transform.Find("SkinnedMesh").GetComponent<SkinnedMeshRenderer>().sharedMesh =
-            VWL.CurrentlySelectedWeapon.CurrentWeaponMesh;
     }
 }
