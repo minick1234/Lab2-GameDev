@@ -51,24 +51,41 @@ MonoBehaviour:
     CurrentWeaponMesh: {fileID: 0}
   WeaponCollectionList:
   - CurrWeaponIndex: 0
-    CurrentWeaponName: I am so sad right now i want this to work.
-    CurrentWeaponDescription: This is soething i am really sad about because this
-      shit is taking me forever.
+    CurrentWeaponName: Bow And Arrow
+    CurrentWeaponDescription: A very classic weapon as old as time, very effective
+      for hunting, not only beasts but man as well.  If you can only see from one
+      eye i recommend staying clear as it requires pretty good visual depth and accuracy.
     CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
   - CurrWeaponIndex: 0
-    CurrentWeaponName: Blades Of Zora
-    CurrentWeaponDescription: These are mystical and dangerous weapons be careful.
-    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+    CurrentWeaponName: 4 Blade Axe
+    CurrentWeaponDescription: This is a standard big axe, it isnt as cool though
+      as it only has 4 blades....pft.....lameeeee
+    CurrentWeaponMesh: {fileID: 8720908179139277771, guid: 13f791f58e9c1d949beb41fcea897fba, type: 3}
   - CurrWeaponIndex: 0
-    CurrentWeaponName: Sorcerers staff of light
-    CurrentWeaponDescription: This staff has the power TO LIGHT AN ENTIRE ROOM.
-    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+    CurrentWeaponName: 6 Blade Axe
+    CurrentWeaponDescription: SEE NOW THIS IS A AXE. WOW, 6 WHOLE BLADES FOR NON
+      STOP CHOPPIN. A legendary weapon most profoundly used by really cool people....obviously.
+    CurrentWeaponMesh: {fileID: 2266434106026569460, guid: 6fe651044b932504481d6a524b44578c, type: 3}
   - CurrWeaponIndex: 0
-    CurrentWeaponName: Thing
+    CurrentWeaponName: Pound Hammer
     CurrentWeaponDescription: This is something we arent really to sure but we keep
       it around because we like it.
-    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+    CurrentWeaponMesh: {fileID: 4862312050076639386, guid: 59906e0883c51124382c3c21af43c5fa, type: 3}
   - CurrWeaponIndex: 0
-    CurrentWeaponName: Fart spray
-    CurrentWeaponDescription: This shit just fucking stinks.
-    CurrentWeaponMesh: {fileID: 1511272103818347667, guid: e24454a0174746749a93fd18edd86463, type: 3}
+    CurrentWeaponName: Knife
+    CurrentWeaponDescription: This is what every thief and killer uses in the knife,
+      be careful, as someone might always be lurking in the dark with one of these
+      bad boys equipt.
+    CurrentWeaponMesh: {fileID: 5745753154371342653, guid: e3e087a2bd9e0c84cbc667b4191bf8c4, type: 3}
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: Shield And Spear
+    CurrentWeaponDescription: These the things the spartans used, trust me this shit
+      is deadly,one little poke and its not joke, lemme tell ya.
+    CurrentWeaponMesh: {fileID: 5450243998822359594, guid: ae5215ff3a441ac4ab61d320493cf2c8, type: 3}
+  - CurrWeaponIndex: 0
+    CurrentWeaponName: Shield And Sword
+    CurrentWeaponDescription: Man, if you dont know bout these bad boys, then you
+      clearly aint watched any bad ass old medieval movies and tbh i am sad and cant
+      be bothered explaining this to you as this is quite self explainatory young
+      traveler.
+    CurrentWeaponMesh: {fileID: 5350271536044390468, guid: 400dcbca52d6a2b4aab1b4b56170b8a0, type: 3}

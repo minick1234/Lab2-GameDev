@@ -32,8 +32,13 @@ public class ValidWeaponList : MonoBehaviour
             counter++;
         }
 
-        CurrentlySelectedWeapon.CurrentWeaponName = WeaponCollectionList[0].CurrentWeaponName;
-        CurrentlySelectedWeapon.CurrentWeaponDescription = WeaponCollectionList[0].CurrentWeaponDescription;
-        CurrentlySelectedWeapon.CurrentWeaponMesh = WeaponCollectionList[0].CurrentWeaponMesh;
+        if (CurrentlySelectedWeapon.CurrentWeaponName != null ||
+            CurrentlySelectedWeapon.CurrentWeaponDescription != null ||
+            CurrentlySelectedWeapon.CurrentWeaponMesh != null)
+        {
+            CurrentlySelectedWeapon.CurrentWeaponName = WeaponCollectionList[0].CurrentWeaponName;
+            CurrentlySelectedWeapon.CurrentWeaponDescription = WeaponCollectionList[0].CurrentWeaponDescription;
+            CurrentlySelectedWeapon.CurrentWeaponMesh = WeaponCollectionList[0].CurrentWeaponMesh;
+        }
     }
 }

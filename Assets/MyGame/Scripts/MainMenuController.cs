@@ -10,6 +10,25 @@ public class MainMenuController : MonoBehaviour
 {
     public SceneLoader sl;
 
+    public GameObject LabThreeCanvas;
+    public GameObject MainFocusedMenu;
+    
+    public Animation LabThreeSlideOut;
+    public Animation LabThreeSlideIn;
+
+    public Animation MainMenuSlideOut;
+    public Animation MainMenuslideIn;
+
+    public Animation LabThreeImageSideSlideOut;
+    public Animation LabThreeImageSideSlideIn;
+
+    public Animation LabThreeImageCenterSizeInOut;
+
+    public Animation ButtonAnimationForFadeInOut;
+    
+    public float timeDelayBetweenAnimations = 5f;
+    public bool IsLabThreeActive = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +40,19 @@ public class MainMenuController : MonoBehaviour
             Debug.Log("Ye reset ye playerprefs lad.");
         }
     }
+
+    public void OpenLabThreeCanvas()
+    {
+        LabThreeCanvas.SetActive(true);
+        MainFocusedMenu.SetActive(false);
+    }
+
+    public void CloseLabThreeCanvas()
+    {
+        LabThreeCanvas.SetActive(false);
+        MainFocusedMenu.SetActive(true);
+    }
+
 
     public void LoadCharacterViewScene()
     {
@@ -39,6 +71,6 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadCharacterAnimationPreviewScene()
     {
-//             StartCoroutine(sl.FakeLoadSceneAsync("Character Animation Viewer", 3f));
+        StartCoroutine(sl.FakeLoadSceneAsync("Character Animation Viewer", 3f));
     }
 }

@@ -138,6 +138,7 @@ public class WeaponViewerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        VWL = GameObject.FindObjectOfType<ValidWeaponList>();
         WeaponObjectCentre = Instantiate(SpawnableWeaponItemUI, MiddlePoint.transform.position, Quaternion.identity);
         CurrentWeaponDetailsInfo.CurrentWeaponName = VWL.CurrentlySelectedWeapon.CurrentWeaponName;
         CurrentWeaponDetailsInfo.CurrentWeaponMesh = VWL.CurrentlySelectedWeapon.CurrentWeaponMesh;

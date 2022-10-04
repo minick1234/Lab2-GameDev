@@ -8207,7 +8207,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 934564382}
   m_HandleRect: {fileID: 934564381}
   m_Direction: 3
-  m_Value: 1
+  m_Value: 0.49999994
   m_Size: 0.08468144
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -19353,7 +19353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.098856986, y: -132.84163}
+  m_AnchoredPosition: {x: -0.098856986, y: 0.000012397766}
   m_SizeDelta: {x: 275.2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036842444
@@ -39314,99 +39314,6 @@ PrefabInstance:
     - target: {fileID: 6204853141921490219, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
       propertyPath: m_Name
       value: ValidWeaponList
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[0].CurrentWeaponName
-      value: Bow And Arrow
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[1].CurrentWeaponMesh
-      value: 
-      objectReference: {fileID: 8720908179139277771, guid: 13f791f58e9c1d949beb41fcea897fba, type: 3}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[1].CurrentWeaponName
-      value: 4 Blade Axe
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[2].CurrentWeaponMesh
-      value: 
-      objectReference: {fileID: 2266434106026569460, guid: 6fe651044b932504481d6a524b44578c, type: 3}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[2].CurrentWeaponName
-      value: 6 Blade Axe
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[3].CurrentWeaponMesh
-      value: 
-      objectReference: {fileID: 4862312050076639386, guid: 59906e0883c51124382c3c21af43c5fa, type: 3}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[3].CurrentWeaponName
-      value: Pound Hammer
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[4].CurrentWeaponMesh
-      value: 
-      objectReference: {fileID: 5745753154371342653, guid: e3e087a2bd9e0c84cbc667b4191bf8c4, type: 3}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[4].CurrentWeaponName
-      value: Knife
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[5].CurrentWeaponMesh
-      value: 
-      objectReference: {fileID: 5450243998822359594, guid: ae5215ff3a441ac4ab61d320493cf2c8, type: 3}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[5].CurrentWeaponName
-      value: Shield And Spear
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[6].CurrentWeaponMesh
-      value: 
-      objectReference: {fileID: 5350271536044390468, guid: 400dcbca52d6a2b4aab1b4b56170b8a0, type: 3}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[6].CurrentWeaponName
-      value: Shield And Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[0].CurrentWeaponDescription
-      value: A very classic weapon as old as time, very effective for hunting, not
-        only beasts but man as well.  If you can only see from one eye i recommend
-        staying clear as it requires pretty good visual depth and accuracy.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[1].CurrentWeaponDescription
-      value: This is a standard big axe, it isnt as cool though as it only has 4
-        blades....pft.....lameeeee
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[2].CurrentWeaponDescription
-      value: SEE NOW THIS IS A AXE. WOW, 6 WHOLE BLADES FOR NON STOP CHOPPIN. A legendary
-        weapon most profoundly used by really cool people....obviously.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[3].CurrentWeaponDescription
-      value: This is something we arent really to sure but we keep it around because
-        we like it.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[4].CurrentWeaponDescription
-      value: This is what every thief and killer uses in the knife, be careful, as
-        someone might always be lurking in the dark with one of these bad boys equipt.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[5].CurrentWeaponDescription
-      value: These the things the spartans used, trust me this shit is deadly,one
-        little poke and its not joke, lemme tell ya.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6204853141921490221, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
-      propertyPath: WeaponCollectionList.Array.data[6].CurrentWeaponDescription
-      value: Man, if you dont know bout these bad boys, then you clearly aint watched
-        any bad ass old medieval movies and tbh i am sad and cant be bothered explaining
-        this to you as this is quite self explainatory young traveler.
       objectReference: {fileID: 0}
     - target: {fileID: 6204853141921490222, guid: b856d9b02f8e2544d9665bd1436d4b97, type: 3}
       propertyPath: m_RootOrder
