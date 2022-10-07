@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5992702316208794594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5992702316208794599}
+  - component: {fileID: 5992702316208794592}
+  - component: {fileID: 525093192910213390}
+  - component: {fileID: 5992702316208794598}
+  m_Layer: 0
+  m_Name: AnimationViewer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5992702316208794599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992702316208794594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -106.31167, y: -22.911375, z: 111.74176}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5992702316208794592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992702316208794594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b4289be39f412ca2eba50ac659f667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCanvas: {fileID: 0}
+  LoadingCanvas: {fileID: 0}
+  LoadingText: {fileID: 0}
+--- !u!114 &525093192910213390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992702316208794594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f6d15f4a9b5c0468d77eb868344810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sl: {fileID: 5992702316208794592}
+  CharacterContainer: {fileID: 0}
+  AnimationUIContainer: {fileID: 4372021438020264082, guid: 220e380f96294154bb5106399f7913d4, type: 3}
+  VAL: {fileID: 0}
+  CurrentAnimationDetails: {fileID: 5992702316208794598}
+  PlayerViewedSkinnedMeshRenderer: {fileID: 0}
+  tempObjectName: {fileID: 0}
+  VCL: {fileID: 0}
+  animatorThing: {fileID: 0}
+--- !u!114 &5992702316208794598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992702316208794594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25c50ddec8cdf646b7c6bbd62583027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationName: 

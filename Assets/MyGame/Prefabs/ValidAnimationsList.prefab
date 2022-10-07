@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3298987382423676426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3298987382423676428}
+  - component: {fileID: 3298987382423676424}
+  - component: {fileID: 3298987382423676427}
+  m_Layer: 0
+  m_Name: ValidAnimationsList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3298987382423676428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298987382423676426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 511.89926, y: 1112.8064, z: -35.65033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3298987382423676424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298987382423676426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c430b46fd7239a4598577956c55a08f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfAnimation_SOS:
+  - {fileID: 11400000, guid: 697e96d18182e5d4ba88ae0d4c30c559, type: 2}
+  - {fileID: 11400000, guid: 806585da27f6a124c9d272ce7ad166ec, type: 2}
+  - {fileID: 11400000, guid: 1a7af38fba232264ebd4859a3d58f330, type: 2}
+  - {fileID: 11400000, guid: 0985e7c01c976a84781591b6be8e315f, type: 2}
+  - {fileID: 11400000, guid: c50ce0145081cb04bba7d52cf63f1c11, type: 2}
+  - {fileID: 11400000, guid: c62b917d409b82f40a1352d1d13bfe27, type: 2}
+  - {fileID: 11400000, guid: af72037cf59ab6e48b1026c467ce1fae, type: 2}
+  - {fileID: 11400000, guid: eb495403196fb4f4cbc181034ea22d2a, type: 2}
+  - {fileID: 11400000, guid: 7d90a004e1d48584badf2bc7f0193a3f, type: 2}
+  - {fileID: 11400000, guid: c0703c0f14da54545977bcc11c2b44e0, type: 2}
+  - {fileID: 11400000, guid: d2f7609e2f886ec4880c1ed073a39403, type: 2}
+  CurrentlySelectedAnimation: {fileID: 0}
+--- !u!114 &3298987382423676427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298987382423676426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25c50ddec8cdf646b7c6bbd62583027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationForThisButton: {fileID: 0}

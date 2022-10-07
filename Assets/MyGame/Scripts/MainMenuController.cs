@@ -10,28 +10,24 @@ public class MainMenuController : MonoBehaviour
 {
     public SceneLoader sl;
 
-    public GameObject LabThreeCanvas;
-    public GameObject MainFocusedMenu;
-    
-    public Animation LabThreeSlideOut;
-    public Animation LabThreeSlideIn;
+    public TextMeshProUGUI ButtonText;
+    public bool IsLab3Open = false;
+    public bool IsAnimationFinished = true;
+    public Animator MainMenuAnimator;
+    public float NextAnimation = 0f;
 
-    public Animation MainMenuSlideOut;
-    public Animation MainMenuslideIn;
-
-    public Animation LabThreeImageSideSlideOut;
-    public Animation LabThreeImageSideSlideIn;
-
-    public Animation LabThreeImageCenterSizeInOut;
-
-    public Animation ButtonAnimationForFadeInOut;
-    
+    public float currTime;
     public float timeDelayBetweenAnimations = 5f;
-    public bool IsLabThreeActive = false;
+
+    public void Start()
+    {
+        MainMenuAnimator.SetBool("FirstTime", true);
+    }
 
     // Update is called once per frame
     void Update()
     {
+        currTime = Time.time;
         //this is just for show, its easier then trying to find the variable in the regedit and changing / deleting it each time,
         //this is onyl because i want to be able to demonstrate it to you.
         if (Input.GetKeyDown(KeyCode.K))
@@ -39,20 +35,53 @@ public class MainMenuController : MonoBehaviour
             PlayerPrefs.SetInt("TutorialFinished", 0);
             Debug.Log("Ye reset ye playerprefs lad.");
         }
+
+        if (MainMenuAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
+            !MainMenuAnimator.IsInTransition(0))
+        {
+            IsAnimationFinished = true;
+
+            if (IsLab3Open)
+            {
+                if (MainMenuAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
+                    !MainMenuAnimator.IsInTransition(0))
+                {
+                    MainMenuAnimator.SetBool("PlayAnimation", true);
+                }
+            }
+        }
+        else
+        {
+            IsAnimationFinished = false;
+        }
+
+        if (Time.time >= NextAnimation && IsLab3Open &&
+            MainMenuAnimator.GetBool("PlayAnimation"))
+        {
+            NextAnimation = Time.time + timeDelayBetweenAnimations;
+            MainMenuAnimator.SetTrigger("Slide");
+            Debug.Log("Player Loop Animation");
+        }
     }
 
-    public void OpenLabThreeCanvas()
+    public void OpenCloseLab3()
     {
-        LabThreeCanvas.SetActive(true);
-        MainFocusedMenu.SetActive(false);
+        MainMenuAnimator.SetBool("FirstTime", false);
+        if (!IsLab3Open && IsAnimationFinished)
+        {
+            ButtonText.text = "OPEN MAIN MENU";
+            IsLab3Open = true;
+            MainMenuAnimator.SetBool("IsLab3Open", IsLab3Open);
+            NextAnimation = Time.time + timeDelayBetweenAnimations - 3;
+        }
+        else if (IsLab3Open && IsAnimationFinished)
+        {
+            ButtonText.text = "OPEN LAB 3";
+            IsLab3Open = false;
+            MainMenuAnimator.SetBool("IsLab3Open", IsLab3Open);
+            MainMenuAnimator.SetBool("PlayAnimation", false);
+        }
     }
-
-    public void CloseLabThreeCanvas()
-    {
-        LabThreeCanvas.SetActive(false);
-        MainFocusedMenu.SetActive(true);
-    }
-
 
     public void LoadCharacterViewScene()
     {
