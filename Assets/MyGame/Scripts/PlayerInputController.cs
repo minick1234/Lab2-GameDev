@@ -26,7 +26,7 @@ public class PlayerInputController : MonoBehaviour
 
     public Vector2 move, look;
 
-    public bool jump, sprint, crouch, pause;
+    public bool jump, sprint, crouch, pause, shootingFireball;
 
     [Header("Mouse Settings")] public bool cursorLocked = false;
     public bool cursorInputForLook = true;
@@ -125,10 +125,12 @@ public class PlayerInputController : MonoBehaviour
 
     private void OnFireBallShot(InputAction.CallbackContext obj)
     {
+        shootingFireball = true;
     }
 
     private void OnEndFireBallShot(InputAction.CallbackContext obj)
     {
+        shootingFireball = false;
     }
 
 

@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject FireBallProjectile;
     [SerializeField] private float FireRate;
     [SerializeField] private GameObject FireBallProjectileSpawnPoint;
+    [SerializeField] private float LastFiredTime;
 
 
     [SerializeField] private CinemachineVirtualCamera FPPCam;
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour
         CheckIfPlayerGrounded();
         PerformCharacterMovement();
         PerformJump();
+        ShootFireBall();
     }
 
     private void OnDrawGizmos()
@@ -183,6 +185,26 @@ public class PlayerController : MonoBehaviour
     {
         IsGrounded = Physics.CheckSphere(groundCheck_GO.transform.position, GroundedAreaRadius,
             ~PlayerExceptionGroundMask);
+    }
+
+
+    private void ShootFireBall()
+    {
+        if (_input.shootingFireball)
+        {
+            //If its been over that amount of time since we fired.
+            if (Time.time >= LastFiredTime + FireRate)
+            {
+                LastFiredTime = Time.time;
+                Vector3 tempRotation = new Vector3(FireBallProjectileSpawnPoint.transform.rotation.x + 90,
+                    FireBallProjectileSpawnPoint.transform.rotation.y,
+                    FireBallProjectileSpawnPoint.transform.rotation.z);
+                
+                GameObject tempFireballObj = Instantiate(FireBallProjectile,
+                    FireBallProjectileSpawnPoint.transform.position, FireBallProjectileSpawnPoint.transform.rotation);
+                Debug.Log("Have currently spawned a fireball.");
+            }
+        }
     }
 
     private void PerformJump()
