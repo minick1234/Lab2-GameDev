@@ -12,6 +12,16 @@ public class AnimationViewerManager : MonoBehaviour
     public GameObject CharacterContainer;
     public GameObject AnimationUIContainer;
 
+    public GameObject UpperRightButtonsPanel;
+    public GameObject OutLines;
+    public GameObject UpperMiddleUIPanel;
+    public GameObject LeftCharacterContainer;
+
+    public GameObject MiddleCharacterViewer;
+    public GameObject AnimationViewerCamera;
+    public GameObject PlayerSpawnPoint;
+    public GameObject PlayerObject;
+
     public ValidAnimationsList VAL;
     public AnimationDetailsInfo CurrentAnimationDetails;
 
@@ -24,9 +34,13 @@ public class AnimationViewerManager : MonoBehaviour
     public TextMeshProUGUI tempObjectName;
 
     public ValidCharacterList VCL;
-    
+
     public Animator animatorThing;
-    
+
+
+    public bool IsGameOn;
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -69,10 +83,33 @@ public class AnimationViewerManager : MonoBehaviour
         StartCoroutine(sl.FakeLoadSceneAsync("Character Viewer", 3f));
     }
 
-    public void PlayGame()
+    public void StartPlayGame()
     {
-        Debug.Log("maybe will implement this");
+        IsGameOn = true;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        PlayerObject.SetActive(true);
+        AnimationViewerCamera.SetActive(false);
+        MiddleCharacterViewer.SetActive(false);
+        UpperMiddleUIPanel.SetActive(true);
+        UpperRightButtonsPanel.SetActive(false);
+        LeftCharacterContainer.SetActive(false);
+        OutLines.SetActive(false);
     }
+
+    public void StopPlayingGame()
+    {
+        IsGameOn = false;
+        Cursor.lockState = CursorLockMode.None;
+        PlayerObject.SetActive(false);
+        AnimationViewerCamera.SetActive(true);
+        MiddleCharacterViewer.SetActive(true);
+        UpperMiddleUIPanel.SetActive(false);
+        UpperRightButtonsPanel.SetActive(true);
+        LeftCharacterContainer.SetActive(true);
+        OutLines.SetActive(true);
+    }
+
 
     public void ClickedInventoryItem()
     {
