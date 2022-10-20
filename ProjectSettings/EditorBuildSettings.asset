@@ -13,8 +13,12 @@ EditorBuildSettings:
     guid: aadd2fcd0725329449d1a6ff9504705b
   - enabled: 1
     path: Assets/MyGame/Scenes/Weapon Viewer.unity
-    guid: faafe8b145be7e64b893fb4b3d131095
+    guid: 428f4f6cf6ccaf44987fa3d481ce4957
+  - enabled: 1
+    path: Assets/MyGame/Scenes/About Us.unity
+    guid: e885727ad19afa14489a628bde80b21d
   - enabled: 1
     path: Assets/MyGame/Scenes/Character Animation Viewer.unity
-    guid: 8b34510a669785b4593efeeb3b4f497e
-  m_configObjects: {}
+    guid: dadb53089391d224f92dc1749b8529de
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9aa19a4b6d932334e9eb7fe45245f096, type: 2}

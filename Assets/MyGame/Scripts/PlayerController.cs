@@ -199,11 +199,27 @@ public class PlayerController : MonoBehaviour
                 Vector3 tempRotation = new Vector3(FireBallProjectileSpawnPoint.transform.rotation.x + 90,
                     FireBallProjectileSpawnPoint.transform.rotation.y,
                     FireBallProjectileSpawnPoint.transform.rotation.z);
-                
+
                 GameObject tempFireballObj = Instantiate(FireBallProjectile,
                     FireBallProjectileSpawnPoint.transform.position, FireBallProjectileSpawnPoint.transform.rotation);
                 Debug.Log("Have currently spawned a fireball.");
             }
+        }
+    }
+
+    public void ShootFireBallMOBILE()
+    {
+        //If its been over that amount of time since we fired.
+        if (Time.time >= LastFiredTime + FireRate)
+        {
+            LastFiredTime = Time.time;
+            Vector3 tempRotation = new Vector3(FireBallProjectileSpawnPoint.transform.rotation.x + 90,
+                FireBallProjectileSpawnPoint.transform.rotation.y,
+                FireBallProjectileSpawnPoint.transform.rotation.z);
+
+            GameObject tempFireballObj = Instantiate(FireBallProjectile,
+                FireBallProjectileSpawnPoint.transform.position, FireBallProjectileSpawnPoint.transform.rotation);
+            Debug.Log("Have currently spawned a fireball.");
         }
     }
 

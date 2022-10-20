@@ -12,6 +12,7 @@ public class RotateCenterObject : MonoBehaviour
     public float MouseX;
     public float MouseY;
 
+    public bool AllowClickOn = true;
     public bool ClickedOnObject = false;
 
     public GameObject ObjectToRotate;
@@ -36,34 +37,38 @@ public class RotateCenterObject : MonoBehaviour
             Cursor.visible = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.Mouse0) && ClickedOnObject)
+        if (AllowClickOn)
         {
-            ClickedOnObject = false;
-            RotateAutomatically = true;
-        }
-
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            if (EventSystem.current.IsPointerOverGameObject() && !ClickedOnObject)
+            if (Input.GetKeyUp(KeyCode.Mouse0) && ClickedOnObject)
             {
                 ClickedOnObject = false;
                 RotateAutomatically = true;
             }
-            else
+
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-                RaycastHit HitInfo;
-                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out HitInfo, Mathf.Infinity,
-                        ~(1 << 5)))
+                if (EventSystem.current.IsPointerOverGameObject() && !ClickedOnObject)
                 {
-                    MouseX = Input.GetAxis("Mouse X");
-                    MouseY = Input.GetAxis("Mouse Y");
-                    ClickedOnObject = true;
-                    Cursor.lockState = CursorLockMode.Confined;
-                    RotateAutomatically = false;
-                    Cursor.visible = false;
+                    ClickedOnObject = false;
+                    RotateAutomatically = true;
+                }
+                else
+                {
+                    RaycastHit HitInfo;
+                    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out HitInfo, Mathf.Infinity,
+                            ~(1 << 5)))
+                    {
+                        MouseX = Input.GetAxis("Mouse X");
+                        MouseY = Input.GetAxis("Mouse Y");
+                        ClickedOnObject = true;
+                        Cursor.lockState = CursorLockMode.Confined;
+                        RotateAutomatically = false;
+                        Cursor.visible = false;
+                    }
                 }
             }
         }
+
 
         if (ClickedOnObject && !RotateAutomatically)
         {

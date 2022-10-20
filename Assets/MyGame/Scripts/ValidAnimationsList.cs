@@ -5,8 +5,7 @@ using UnityEngine;
 public class ValidAnimationsList : MonoBehaviour
 {
     public static ValidAnimationsList instanceOfAnimationList;
-    public List<AnimationInfo_SO> ListOfAnimation_SOS = new List<AnimationInfo_SO>();
-    public AnimationDetailsInfo CurrentlySelectedAnimation;
+    public List<AnimationDetailsInfo> ListOfAnimationDetails = new List<AnimationDetailsInfo>();
 
     // Start is called before the first frame update
     void Awake()
@@ -21,12 +20,10 @@ public class ValidAnimationsList : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (ListOfAnimation_SOS.Count > 11)
+        if (ListOfAnimationDetails.Count > 11)
         {
-            int NumberOfElementsAboveAllowed = ListOfAnimation_SOS.Count - 11;
-            ListOfAnimation_SOS.RemoveRange(11, NumberOfElementsAboveAllowed);
+            int NumberOfElementsAboveAllowed = ListOfAnimationDetails.Count - 11;
+            ListOfAnimationDetails.RemoveRange(11, NumberOfElementsAboveAllowed);
         }
-
-        CurrentlySelectedAnimation.AnimationName = ListOfAnimation_SOS[0].AnimationName;
     }
 }
